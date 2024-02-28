@@ -4,6 +4,7 @@
   border-radius: 20px;
   box-shadow: 0 3px 7px rgba(0,0,0,0.25);
   transition: transform 0.5s ease-in-out;
+  background-color: white;
 }
 
 @media (min-width: 768px) {
@@ -64,11 +65,7 @@
   background-color: white;
 }
 
-.featured__hero__stats_icon {
+.featured__hero__stats__icon {
   width: 25px;
   margin-bottom: 10px;
-}
-
-.featured__hero__stats > div {
-
 }

@@ -7,6 +7,7 @@ import {
   Route,
 } from "react-router-dom";
 import Nav from './Components/Nav/Nav';
+import SearchView from './Components/SearchView/SearchView';
 
 function App() {
   return (
@@ -17,7 +18,7 @@ function App() {
           <div className="container">
             <Routes>
               <Route path="/" element={<HeroesFeatured />} />
-              <Route path="/search/:name" />
+              <Route path="/search/:name" element={<SearchView />} />
               <Route path="/hero/:id" />
             </Routes>
           </div>
