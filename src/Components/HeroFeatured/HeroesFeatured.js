@@ -1,12 +1,12 @@
 import { useEffect, useState } from 'react';
 import { getBasicHeroInfoById } from '../../requests';
-import './HeroesFeatured.css';
 import HeroSimplified from '../HeroSimplified/HeroSimplified';
 import Loader from '../Loader/Loader';
+import './HeroesFeatured.css';
 
 const featuredHeroesIds = [729, 418, 208];
 
-function HeroesFeatured() {
+export default function HeroesFeatured() {
   useEffect(() => {
     fetchAndRenderFeaturedHeroes();
   }, []); 
@@ -38,5 +38,3 @@ function HeroesFeatured() {
     </section>
   );
 }
-
-export default HeroesFeatured;

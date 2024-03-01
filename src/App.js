@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Nav from './Components/Nav/Nav';
 import SearchView from './Components/SearchView/SearchView';
+import HeroDetails from './Components/HeroDetails/HeroDetails';
 
 function App() {
   return (
@@ -19,7 +20,7 @@ function App() {
             <Routes>
               <Route path="/" element={<HeroesFeatured />} />
               <Route path="/search/:name" element={<SearchView />} />
-              <Route path="/hero/:id" />
+              <Route path="/hero/:id" element={<HeroDetails />} />
             </Routes>
           </div>
         </main>
